@@ -13,7 +13,7 @@ sidebar_label: 总览
 - [CSS 工程化：PostCSS、CSS Modules、Tailwind 和样式隔离](./css-engineering.md)。
 - [Monorepo、包管理器、依赖版本治理和发布策略](./monorepo-package-management.md)。
 - [ESLint、Prettier、Type Check、测试和 CI](./testing-ci.md)。
-- Source Map、环境变量、构建产物分析和发布回滚。
+- [Source Map、环境变量、构建产物分析和发布回滚](./source-map-release.md)。
 
 ## 面试目标
 
