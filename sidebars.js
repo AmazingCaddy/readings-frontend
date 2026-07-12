@@ -17,7 +17,8 @@ const sidebars = {
       items: [
         'modules/browser/rendering-pipeline',
         'modules/browser/event-loop',
-        'modules/browser/http-cache'
+        'modules/browser/http-cache',
+        'modules/browser/web-security'
       ]
     },
     {

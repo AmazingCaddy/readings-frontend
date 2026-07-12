@@ -13,7 +13,7 @@ sidebar_label: 总览
 - [HTTP 缓存：强缓存、协商缓存与 Service Worker](./http-cache.md)。
 - 跨域与 CORS：同源策略、预检请求和凭证模式。
 - Cookie、SameSite 与 Storage：登录态和存储边界。
-- Web 安全：XSS、CSRF、点击劫持和 CSP。
+- [Web 安全：XSS、CSRF、点击劫持和 CSP](./web-security.md)。
 
 ## 面试目标
 
