@@ -78,6 +78,7 @@ const sidebars = {
         'modules/performance/core-web-vitals',
         'modules/performance/first-screen',
         'modules/performance/assets-third-party',
+        'modules/performance/long-tasks-worker-virtual-list',
         'modules/performance/monitoring-analytics'
       ]
     },
