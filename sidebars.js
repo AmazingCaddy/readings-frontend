@@ -28,7 +28,8 @@ const sidebars = {
       items: [
         'modules/html-css/layout-bfc',
         'modules/html-css/semantic-accessibility',
-        'modules/html-css/cascade-specificity'
+        'modules/html-css/cascade-specificity',
+        'modules/html-css/responsive-container-query'
       ]
     },
     {
