@@ -12,7 +12,7 @@ sidebar_label: 总览
 - [Hooks 原理：调用顺序、闭包、依赖数组和副作用边界](./hooks-principles.md)。
 - [状态管理：本地状态、Context、Redux/Zustand、Server State](./state-management.md)。
 - 表单设计：受控、非受控、校验、异步提交和错误恢复。
-- 列表与虚拟滚动：大数据渲染、动态高度和滚动体验。
+- [React 性能优化：重渲染、memo、长列表和 Profiler](./performance-optimization.md)。
 - 复杂交互组件：弹窗、下拉、拖拽、快捷键和可访问性。
 - 组件设计：组合、插槽、Headless 组件和抽象边界。
 
