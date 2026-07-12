@@ -9,8 +9,7 @@ sidebar_label: 总览
 ## 计划文章
 
 - [前端面试 30 天路径](./30-day-plan.md)。
-- 高频八股题背后的真实工程问题。
-- React、浏览器、工程化、性能和安全的面试答案库。
+- [高频八股题背后的真实工程问题与面试答案库](./answer-bank.md)。
 - [前端系统设计题：后台管理系统、IM、低代码、埋点 SDK、组件库、性能监控平台](./system-design-template.md)。
 - [项目复盘模板：背景、难点、方案、权衡、指标、结果](./project-retrospective.md)。
 

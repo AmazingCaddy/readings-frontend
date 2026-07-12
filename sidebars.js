@@ -115,6 +115,7 @@ const sidebars = {
       link: { type: 'doc', id: 'modules/interview/index' },
       items: [
         'modules/interview/day-plan',
+        'modules/interview/answer-bank',
         'modules/interview/project-retrospective',
         'modules/interview/system-design-template'
       ]
