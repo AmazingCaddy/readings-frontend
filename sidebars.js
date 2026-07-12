@@ -89,7 +89,8 @@ const sidebars = {
         'modules/reliability/request-state-race',
         'modules/reliability/optimistic-idempotency',
         'modules/reliability/frontend-backend-cache',
-        'modules/reliability/realtime-communication'
+        'modules/reliability/realtime-communication',
+        'modules/reliability/offline-weak-network-error-boundary'
       ]
     },
     {
