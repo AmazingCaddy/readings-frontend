@@ -12,7 +12,7 @@ sidebar_label: 总览
 - 执行上下文、作用域和调用栈。
 - `this` 绑定规则和常见丢失场景。
 - [Promise、async/await、异常传播和并发控制](./async-error-concurrency.md)。
-- ESM、CommonJS、Tree Shaking 和循环依赖。
+- [ESM、CommonJS、Tree Shaking 和循环依赖](./modules-tree-shaking.md)。
 - [TypeScript 泛型、类型收窄、条件类型和工程实践](./typescript-type-system.md)。
 - 内存泄漏、垃圾回收和性能陷阱。
 

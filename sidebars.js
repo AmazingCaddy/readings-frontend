@@ -34,7 +34,8 @@ const sidebars = {
       items: [
         'modules/javascript-typescript/prototype-closure',
         'modules/javascript-typescript/async-error-concurrency',
-        'modules/javascript-typescript/typescript-type-system'
+        'modules/javascript-typescript/typescript-type-system',
+        'modules/javascript-typescript/modules-tree-shaking'
       ]
     },
     {
