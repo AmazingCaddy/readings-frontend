@@ -46,7 +46,8 @@ const sidebars = {
         'modules/react/rendering-model',
         'modules/react/hooks-principles',
         'modules/react/state-management',
-        'modules/react/performance-optimization'
+        'modules/react/performance-optimization',
+        'modules/react/forms'
       ]
     },
     {
