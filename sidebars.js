@@ -60,7 +60,11 @@ const sidebars = {
       type: 'category',
       label: '性能优化',
       link: { type: 'doc', id: 'modules/performance/index' },
-      items: ['modules/performance/core-web-vitals', 'modules/performance/first-screen']
+      items: [
+        'modules/performance/core-web-vitals',
+        'modules/performance/first-screen',
+        'modules/performance/monitoring-analytics'
+      ]
     },
     {
       type: 'category',
