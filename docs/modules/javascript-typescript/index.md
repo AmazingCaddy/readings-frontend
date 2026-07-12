@@ -8,8 +8,8 @@ sidebar_label: 总览
 
 ## 计划文章
 
-- 执行上下文、作用域、闭包和调用栈。
-- 原型链、继承、`class` 与对象模型。
+- [原型链、闭包、继承与对象模型](./prototype-closure.md)。
+- 执行上下文、作用域和调用栈。
 - `this` 绑定规则和常见丢失场景。
 - [Promise、async/await、异常传播和并发控制](./async-error-concurrency.md)。
 - ESM、CommonJS、Tree Shaking 和循环依赖。

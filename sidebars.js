@@ -32,6 +32,7 @@ const sidebars = {
       label: 'JavaScript 与 TypeScript 深入',
       link: { type: 'doc', id: 'modules/javascript-typescript/index' },
       items: [
+        'modules/javascript-typescript/prototype-closure',
         'modules/javascript-typescript/async-error-concurrency',
         'modules/javascript-typescript/typescript-type-system'
       ]
