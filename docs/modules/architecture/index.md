@@ -8,8 +8,8 @@ sidebar_label: 总览
 
 ## 计划文章
 
-- BFF 与前后端协作边界。
-- 微前端：适用场景、隔离、路由和状态共享。
+- [BFF 与前后端协作边界](./micro-frontend-bff.md)。
+- [微前端：适用场景、隔离、路由和状态共享](./micro-frontend-bff.md)。
 - [权限系统、菜单系统和动态路由](./permission-routing.md)。
 - 国际化、主题系统和设计系统。
 - 大型表格、低代码页面和可视化编辑器。

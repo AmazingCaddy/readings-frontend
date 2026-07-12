@@ -70,7 +70,10 @@ const sidebars = {
       type: 'category',
       label: '前端架构与系统设计',
       link: { type: 'doc', id: 'modules/architecture/index' },
-      items: ['modules/architecture/permission-routing']
+      items: [
+        'modules/architecture/permission-routing',
+        'modules/architecture/micro-frontend-bff'
+      ]
     },
     {
       type: 'category',
