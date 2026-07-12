@@ -30,7 +30,11 @@ const sidebars = {
       type: 'category',
       label: 'React 与现代 UI 架构',
       link: { type: 'doc', id: 'modules/react/index' },
-      items: ['modules/react/rendering-model', 'modules/react/hooks-principles']
+      items: [
+        'modules/react/rendering-model',
+        'modules/react/hooks-principles',
+        'modules/react/state-management'
+      ]
     },
     {
       type: 'category',
