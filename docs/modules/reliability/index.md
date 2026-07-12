@@ -8,8 +8,8 @@ sidebar_label: 总览
 
 ## 计划文章
 
-- 请求状态管理：loading、empty、error、success。
-- 重试、超时、取消请求和竞态控制。
+- [请求状态管理：loading、empty、error、success](./request-state-race.md)。
+- [重试、超时、取消请求和竞态控制](./request-state-race.md)。
 - 乐观更新、回滚、幂等提交和防重复点击。
 - 前端缓存与后端缓存协作。
 - WebSocket、SSE、轮询和实时数据一致性。

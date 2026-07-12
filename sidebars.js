@@ -55,7 +55,7 @@ const sidebars = {
       type: 'category',
       label: '前端可靠性与数据流',
       link: { type: 'doc', id: 'modules/reliability/index' },
-      items: []
+      items: ['modules/reliability/request-state-race']
     },
     {
       type: 'category',
