@@ -26,7 +26,7 @@ const sidebars = {
       type: 'category',
       label: 'React 与现代 UI 架构',
       link: { type: 'doc', id: 'modules/react/index' },
-      items: []
+      items: ['modules/react/rendering-model']
     },
     {
       type: 'category',
