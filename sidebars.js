@@ -64,6 +64,7 @@ const sidebars = {
       items: [
         'modules/engineering/bundlers',
         'modules/engineering/compiler-boundaries',
+        'modules/engineering/monorepo-package-management',
         'modules/engineering/testing-ci'
       ]
     },
