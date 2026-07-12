@@ -86,6 +86,7 @@ const sidebars = {
       items: [
         'modules/reliability/request-state-race',
         'modules/reliability/optimistic-idempotency',
+        'modules/reliability/frontend-backend-cache',
         'modules/reliability/realtime-communication'
       ]
     },
