@@ -52,7 +52,7 @@ const sidebars = {
       type: 'category',
       label: '前端工程化',
       link: { type: 'doc', id: 'modules/engineering/index' },
-      items: ['modules/engineering/bundlers']
+      items: ['modules/engineering/bundlers', 'modules/engineering/testing-ci']
     },
     {
       type: 'category',
