@@ -46,7 +46,7 @@ const sidebars = {
       type: 'category',
       label: '性能优化',
       link: { type: 'doc', id: 'modules/performance/index' },
-      items: []
+      items: ['modules/performance/core-web-vitals']
     },
     {
       type: 'category',
