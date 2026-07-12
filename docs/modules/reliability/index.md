@@ -12,7 +12,7 @@ sidebar_label: 总览
 - [重试、超时、取消请求和竞态控制](./request-state-race.md)。
 - [乐观更新、回滚、幂等提交和防重复点击](./optimistic-idempotency.md)。
 - 前端缓存与后端缓存协作。
-- WebSocket、SSE、轮询和实时数据一致性。
+- [WebSocket、SSE、轮询和实时数据一致性](./realtime-communication.md)。
 - 离线、弱网、错误边界和降级体验。
 
 ## 面试目标

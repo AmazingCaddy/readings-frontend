@@ -82,7 +82,8 @@ const sidebars = {
       link: { type: 'doc', id: 'modules/reliability/index' },
       items: [
         'modules/reliability/request-state-race',
-        'modules/reliability/optimistic-idempotency'
+        'modules/reliability/optimistic-idempotency',
+        'modules/reliability/realtime-communication'
       ]
     },
     {
