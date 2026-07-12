@@ -14,7 +14,11 @@ const sidebars = {
       type: 'category',
       label: '浏览器与 Web 基础',
       link: { type: 'doc', id: 'modules/browser/index' },
-      items: ['modules/browser/rendering-pipeline', 'modules/browser/event-loop']
+      items: [
+        'modules/browser/rendering-pipeline',
+        'modules/browser/event-loop',
+        'modules/browser/http-cache'
+      ]
     },
     {
       type: 'category',
