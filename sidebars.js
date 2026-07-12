@@ -20,7 +20,7 @@ const sidebars = {
       type: 'category',
       label: 'JavaScript 与 TypeScript 深入',
       link: { type: 'doc', id: 'modules/javascript-typescript/index' },
-      items: []
+      items: ['modules/javascript-typescript/async-error-concurrency']
     },
     {
       type: 'category',

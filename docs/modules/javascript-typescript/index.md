@@ -11,7 +11,7 @@ sidebar_label: 总览
 - 执行上下文、作用域、闭包和调用栈。
 - 原型链、继承、`class` 与对象模型。
 - `this` 绑定规则和常见丢失场景。
-- Promise、async/await、异常传播和并发控制。
+- [Promise、async/await、异常传播和并发控制](./async-error-concurrency.md)。
 - ESM、CommonJS、Tree Shaking 和循环依赖。
 - TypeScript 泛型、类型收窄、条件类型和工程实践。
 - 内存泄漏、垃圾回收和性能陷阱。
