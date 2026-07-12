@@ -9,7 +9,7 @@ sidebar_label: 总览
 ## 计划文章
 
 - [React 渲染模型：render、commit、Fiber 和并发渲染基础](./rendering-model.md)。
-- Hooks 原理：调用顺序、闭包、依赖数组和副作用边界。
+- [Hooks 原理：调用顺序、闭包、依赖数组和副作用边界](./hooks-principles.md)。
 - 状态管理：本地状态、Context、Redux/Zustand、Server State。
 - 表单设计：受控、非受控、校验、异步提交和错误恢复。
 - 列表与虚拟滚动：大数据渲染、动态高度和滚动体验。
