@@ -18,6 +18,7 @@ const sidebars = {
         'modules/browser/rendering-pipeline',
         'modules/browser/event-loop',
         'modules/browser/http-cache',
+        'modules/browser/origin-cors-cookie-storage',
         'modules/browser/web-security'
       ]
     },

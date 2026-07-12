@@ -11,8 +11,7 @@ sidebar_label: 总览
 - [浏览器渲染流程：HTML/CSS/JS 如何变成页面](./rendering-pipeline.md)。
 - [事件循环：宏任务、微任务与渲染时机](./event-loop.md)。
 - [HTTP 缓存：强缓存、协商缓存与 Service Worker](./http-cache.md)。
-- 跨域与 CORS：同源策略、预检请求和凭证模式。
-- Cookie、SameSite 与 Storage：登录态和存储边界。
+- [跨域与 CORS、Cookie、SameSite 和 Storage](./origin-cors-cookie-storage.md)。
 - [Web 安全：XSS、CSRF、点击劫持和 CSP](./web-security.md)。
 
 ## 面试目标
