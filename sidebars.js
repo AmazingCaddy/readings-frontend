@@ -56,6 +56,7 @@ const sidebars = {
         'modules/react/state-management',
         'modules/react/performance-optimization',
         'modules/react/forms',
+        'modules/react/complex-interactions',
         'modules/react/component-design'
       ]
     },
