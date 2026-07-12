@@ -9,7 +9,7 @@ sidebar_label: 总览
 ## 计划文章
 
 - [浏览器渲染流程：HTML/CSS/JS 如何变成页面](./rendering-pipeline.md)。
-- 事件循环：宏任务、微任务与渲染时机。
+- [事件循环：宏任务、微任务与渲染时机](./event-loop.md)。
 - HTTP 缓存：强缓存、协商缓存与 Service Worker。
 - 跨域与 CORS：同源策略、预检请求和凭证模式。
 - Cookie、SameSite 与 Storage：登录态和存储边界。
