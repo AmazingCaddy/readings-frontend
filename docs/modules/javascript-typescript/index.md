@@ -9,8 +9,7 @@ sidebar_label: 总览
 ## 计划文章
 
 - [原型链、闭包、继承与对象模型](./prototype-closure.md)。
-- 执行上下文、作用域和调用栈。
-- `this` 绑定规则和常见丢失场景。
+- [执行上下文、作用域、调用栈和 this 绑定](./execution-context-this.md)。
 - [Promise、async/await、异常传播和并发控制](./async-error-concurrency.md)。
 - [ESM、CommonJS、Tree Shaking 和循环依赖](./modules-tree-shaking.md)。
 - [TypeScript 泛型、类型收窄、条件类型和工程实践](./typescript-type-system.md)。
