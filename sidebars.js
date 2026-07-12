@@ -43,7 +43,7 @@ const sidebars = {
       type: 'category',
       label: '前端工程化',
       link: { type: 'doc', id: 'modules/engineering/index' },
-      items: []
+      items: ['modules/engineering/bundlers']
     },
     {
       type: 'category',
