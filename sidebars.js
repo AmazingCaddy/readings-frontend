@@ -99,7 +99,8 @@ const sidebars = {
       link: { type: 'doc', id: 'modules/architecture/index' },
       items: [
         'modules/architecture/permission-routing',
-        'modules/architecture/micro-frontend-bff'
+        'modules/architecture/micro-frontend-bff',
+        'modules/architecture/low-code-large-table'
       ]
     },
     {
