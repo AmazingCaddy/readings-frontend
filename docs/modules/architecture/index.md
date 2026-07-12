@@ -13,7 +13,7 @@ sidebar_label: 总览
 - [权限系统、菜单系统和动态路由](./permission-routing.md)。
 - [国际化、主题系统和设计系统](./i18n-theme-design-system.md)。
 - [大型表格、低代码页面和可视化编辑器](./low-code-large-table.md)。
-- IM 前端、直播间前端、埋点 SDK 和性能监控平台。
+- [IM 前端、直播间前端、埋点 SDK 和性能监控平台](./realtime-observability-systems.md)。
 
 ## 面试目标
 
