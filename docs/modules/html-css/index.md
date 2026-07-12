@@ -9,7 +9,7 @@ sidebar_label: 总览
 ## 计划文章
 
 - [CSS 布局、BFC、Flex 和 Grid](./layout-bfc.md)。
-- HTML 语义化、表单和可访问性。
+- [HTML 语义化、表单和可访问性](./semantic-accessibility.md)。
 - CSS 层叠、优先级、继承和样式隔离。
 - 响应式设计、容器查询和移动端适配。
 

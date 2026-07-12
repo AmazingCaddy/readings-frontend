@@ -25,7 +25,7 @@ const sidebars = {
       type: 'category',
       label: 'HTML & CSS 基础能力',
       link: { type: 'doc', id: 'modules/html-css/index' },
-      items: ['modules/html-css/layout-bfc']
+      items: ['modules/html-css/layout-bfc', 'modules/html-css/semantic-accessibility']
     },
     {
       type: 'category',
