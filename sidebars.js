@@ -101,6 +101,7 @@ const sidebars = {
       items: [
         'modules/architecture/permission-routing',
         'modules/architecture/micro-frontend-bff',
+        'modules/architecture/i18n-theme-design-system',
         'modules/architecture/low-code-large-table'
       ]
     },
