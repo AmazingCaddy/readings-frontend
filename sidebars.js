@@ -67,7 +67,7 @@ const sidebars = {
       type: 'category',
       label: '面试与项目实践',
       link: { type: 'doc', id: 'modules/interview/index' },
-      items: []
+      items: ['modules/interview/day-plan']
     }
   ]
 };
