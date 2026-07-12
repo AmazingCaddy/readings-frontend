@@ -14,7 +14,7 @@ sidebar_label: 总览
 - [表单设计：受控、非受控、校验、异步提交和错误恢复](./forms.md)。
 - [React 性能优化：重渲染、memo、长列表和 Profiler](./performance-optimization.md)。
 - 复杂交互组件：弹窗、下拉、拖拽、快捷键和可访问性。
-- 组件设计：组合、插槽、Headless 组件和抽象边界。
+- [组件设计：组合、插槽、Headless 组件和抽象边界](./component-design.md)。
 
 ## 面试目标
 

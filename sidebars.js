@@ -53,7 +53,8 @@ const sidebars = {
         'modules/react/hooks-principles',
         'modules/react/state-management',
         'modules/react/performance-optimization',
-        'modules/react/forms'
+        'modules/react/forms',
+        'modules/react/component-design'
       ]
     },
     {
