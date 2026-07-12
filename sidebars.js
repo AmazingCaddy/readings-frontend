@@ -23,6 +23,12 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'HTML & CSS 基础能力',
+      link: { type: 'doc', id: 'modules/html-css/index' },
+      items: ['modules/html-css/layout-bfc']
+    },
+    {
+      type: 'category',
       label: 'JavaScript 与 TypeScript 深入',
       link: { type: 'doc', id: 'modules/javascript-typescript/index' },
       items: [

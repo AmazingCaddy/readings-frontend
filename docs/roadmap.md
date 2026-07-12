@@ -19,6 +19,7 @@ flowchart TD
 
 ## 1. 浏览器与 Web 基础
 
+- HTML 语义化、CSS 盒模型、BFC、Flex、Grid 和响应式布局。
 - 浏览器渲染流程：HTML、CSS、JavaScript 如何变成页面。
 - 事件循环：宏任务、微任务、渲染时机和异步代码执行顺序。
 - 缓存体系：HTTP 缓存、Service Worker 缓存、浏览器存储。
