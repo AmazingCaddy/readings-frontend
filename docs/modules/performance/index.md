@@ -9,7 +9,7 @@ sidebar_label: 总览
 ## 计划文章
 
 - [Core Web Vitals：LCP、INP、CLS、TTFB](./core-web-vitals.md)。
-- 首屏优化：代码分割、预加载、懒加载和资源优先级。
+- [首屏优化：代码分割、预加载、懒加载和资源优先级](./first-screen.md)。
 - 图片、字体和第三方脚本优化。
 - 长任务拆分、Web Worker、虚拟列表和交互响应。
 - 性能监控、埋点、采样和线上排障案例。
