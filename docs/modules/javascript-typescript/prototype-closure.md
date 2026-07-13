@@ -37,14 +37,24 @@ flowchart TD
 ### 1. 理解 `new` 的过程
 
 ```ts
-function create<T extends object>(Constructor: new (...args: any[]) => T, ...args: any[]) {
+type ConstructorResult<T extends object> = T | object | Function | null | undefined;
+
+type CallableConstructor<T extends object> = {
+  new (...args: any[]): T;
+  (...args: any[]): ConstructorResult<T>;
+  prototype: object;
+};
+
+function create<T extends object>(Constructor: CallableConstructor<T>, ...args: any[]): T {
   const instance = Object.create(Constructor.prototype);
   const result = Constructor.apply(instance, args);
-  return typeof result === 'object' && result !== null ? result : instance;
+  return (typeof result === 'object' && result !== null) || typeof result === 'function'
+    ? (result as T)
+    : (instance as T);
 }
 ```
 
-`new` 大致做了：创建对象、连接原型、绑定 `this` 执行构造函数、返回对象。
+`new` 大致做了：创建对象、连接原型、绑定 `this` 执行构造函数、返回对象。这个简化版适合解释传统可调用构造函数；ES `class` 构造函数不能被 `apply` 直接调用。
 
 ### 2. `class` 仍然是原型机制
 

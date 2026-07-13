@@ -104,18 +104,20 @@ async function processInChunks<T>(
 
 ### 3. 区分微任务和下一帧
 
-Promise 微任务不会让浏览器立刻绘制。如果你想等浏览器完成一次绘制，使用 `requestAnimationFrame` 更贴近渲染时机。
+Promise 微任务不会让浏览器立刻绘制。`requestAnimationFrame` 的回调发生在下一次绘制之前，如果你想先让 loading 有机会真正绘制出来，再执行重任务，可以在 rAF 后再让出一个宏任务。
 
 ```ts
-function nextFrame() {
+function afterNextPaint() {
   return new Promise<void>((resolve) => {
-    requestAnimationFrame(() => resolve());
+    requestAnimationFrame(() => {
+      window.setTimeout(resolve, 0);
+    });
   });
 }
 
 async function showLoadingThenWork() {
   setLoading(true);
-  await nextFrame();
+  await afterNextPaint();
   runExpensiveWork();
   setLoading(false);
 }

@@ -142,6 +142,7 @@ type EventPayload = {
 class AnalyticsQueue {
   private queue: EventPayload[] = [];
   private timer: number | undefined;
+  private flushing = false;
 
   track(name: string, properties: Record<string, unknown>) {
     this.queue.push({ name, properties, timestamp: Date.now() });
@@ -155,20 +156,49 @@ class AnalyticsQueue {
   }
 
   async flush() {
+    if (this.flushing) {
+      return;
+    }
+
     window.clearTimeout(this.timer);
     this.timer = undefined;
 
-    const batch = this.queue.splice(0, this.queue.length);
+    const batch = this.queue.slice(0, this.queue.length);
     if (batch.length === 0) {
       return;
     }
 
-    await fetch('/collect', {
-      method: 'POST',
-      body: JSON.stringify(batch),
-      keepalive: true,
-      headers: { 'content-type': 'application/json' }
-    });
+    this.flushing = true;
+    let shouldRetryLater = false;
+
+    try {
+      const response = await fetch('/collect', {
+        method: 'POST',
+        body: JSON.stringify(batch),
+        keepalive: true,
+        headers: { 'content-type': 'application/json' }
+      });
+
+      if (!response.ok) {
+        throw new Error('Collect failed');
+      }
+
+      this.queue = this.queue.filter((event) => !batch.includes(event));
+    } catch {
+      shouldRetryLater = true;
+    } finally {
+      this.flushing = false;
+
+      if (this.queue.length === 0) {
+        return;
+      }
+
+      if (shouldRetryLater || this.queue.length < 20) {
+        this.timer ??= window.setTimeout(() => void this.flush(), 5000);
+      } else {
+        void this.flush();
+      }
+    }
   }
 }
 ```

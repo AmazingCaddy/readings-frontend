@@ -143,8 +143,11 @@ type SearchState<T> =
 
 export function useSearch<T>(keyword: string, fetcher: (keyword: string, signal: AbortSignal) => Promise<T[]>) {
   const [state, setState] = useState<SearchState<T>>({ type: 'idle' });
+  const requestIdRef = useRef(0);
 
   useEffect(() => {
+    const requestId = requestIdRef.current + 1;
+    requestIdRef.current = requestId;
     const trimmed = keyword.trim();
     if (!trimmed) {
       setState({ type: 'idle' });
@@ -156,9 +159,13 @@ export function useSearch<T>(keyword: string, fetcher: (keyword: string, signal:
 
     fetcher(trimmed, controller.signal)
       .then((data) => {
+        if (requestId !== requestIdRef.current) return;
+
         setState(data.length > 0 ? { type: 'success', data } : { type: 'empty' });
       })
       .catch((error: unknown) => {
+        if (requestId !== requestIdRef.current) return;
+
         if (error instanceof DOMException && error.name === 'AbortError') {
           return;
         }

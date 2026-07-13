@@ -94,21 +94,31 @@ export function processInChunks<T>(items: T[], process: Processor<T>, chunkSize 
 
 ```ts
 // search.worker.ts
-self.addEventListener('message', (event: MessageEvent<{ keyword: string; rows: Row[] }>) => {
-  const { keyword, rows } = event.data;
+self.addEventListener('message', (event: MessageEvent<{ requestId: string; keyword: string; rows: Row[] }>) => {
+  const { requestId, keyword, rows } = event.data;
   const result = rows.filter((row) => row.name.includes(keyword));
-  self.postMessage(result);
+  self.postMessage({ requestId, result });
 });
 ```
 
 ```ts
 // main.ts
 const worker = new Worker(new URL('./search.worker.ts', import.meta.url), { type: 'module' });
+const pending = new Map<string, (rows: Row[]) => void>();
+
+worker.addEventListener('message', (event: MessageEvent<{ requestId: string; result: Row[] }>) => {
+  const resolve = pending.get(event.data.requestId);
+  if (!resolve) return;
+
+  pending.delete(event.data.requestId);
+  resolve(event.data.result);
+});
 
 export function searchRows(keyword: string, rows: Row[]) {
   return new Promise<Row[]>((resolve) => {
-    worker.onmessage = (event: MessageEvent<Row[]>) => resolve(event.data);
-    worker.postMessage({ keyword, rows });
+    const requestId = crypto.randomUUID();
+    pending.set(requestId, resolve);
+    worker.postMessage({ requestId, keyword, rows });
   });
 }
 ```

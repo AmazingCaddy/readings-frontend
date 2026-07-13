@@ -105,16 +105,18 @@ function EditUserForm({ initialValue }: { initialValue: UserForm }) {
     setFieldErrors({});
     setFormError(null);
 
-    const result = await submitUser(value);
+    try {
+      const result = await submitUser(value);
 
-    if (!result.ok) {
-      setFieldErrors(result.fieldErrors ?? {});
-      setFormError(result.formError ?? null);
+      if (!result.ok) {
+        setFieldErrors(result.fieldErrors ?? {});
+        setFormError(result.formError ?? null);
+      }
+    } catch (error) {
+      setFormError(error instanceof Error ? error.message : 'Submit failed');
+    } finally {
       setSubmitting(false);
-      return;
     }
-
-    setSubmitting(false);
   }
 
   return (

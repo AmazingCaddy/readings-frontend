@@ -166,17 +166,24 @@ export function enqueue(action: PendingAction) {
 
 export async function flushQueue(sync: (action: PendingAction) => Promise<void>) {
   const current = JSON.parse(localStorage.getItem(queueKey) ?? '[]') as PendingAction[];
-  const remaining: PendingAction[] = [];
+  const syncedIds = new Set<string>();
 
   for (const action of current) {
     try {
       await sync(action);
+      syncedIds.add(action.id);
     } catch {
-      remaining.push(action);
+      // 保留失败动作，等下一次联网后继续重试。
     }
   }
 
-  localStorage.setItem(queueKey, JSON.stringify(remaining));
+  if (syncedIds.size > 0) {
+    const latest = JSON.parse(localStorage.getItem(queueKey) ?? '[]') as PendingAction[];
+    localStorage.setItem(
+      queueKey,
+      JSON.stringify(latest.filter((action) => !syncedIds.has(action.id)))
+    );
+  }
 }
 
 window.addEventListener('online', () => {
